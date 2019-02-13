@@ -1,0 +1,13 @@
+@charset "UTF-8";
+table{
+  width: 80%;
+  border-collapse: collapse;
+  margin: 2px auto;
+}
+th, td{
+  border: 1px solid black;
+  text-align: center;
+}
+thead, tbody{
+  font-family: serif;
+}

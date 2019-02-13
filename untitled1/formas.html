@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Videos</title>
+    <style>
+      video, audio
+      {
+        display: block;
+        width: 70%;
+        margin: 50px auto;
+      }
+
+    </style>
+  <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+<body>
+<!--Poster muestra una imagen a modo presentación-->
+<!--Preload indica como realizar la precarga del video-->
+  <video controls poster="piano.jpg" preload="metadata"> <!--Poster muestra una imagen a modo presentación-->
+    <source src="video.mp4" type="video/mp4">  <!--SRC contiene el la direccion del video-->
+    <source src="video.ogv" type="video/ogg">
+    <source src="video.webm" type="video/webm">
+    <track src="su.vtt" kind="captions" srclang="en" label="Mosiah" default/>
+    <p>Your browser does not support the video tag.</p>
+  </video>
+
+  <audio controls>
+    <source src="audio.mp3" type="audio/mp3"/>
+    <p>Your browser does not support the audio tag.</p>
+
+  </audio>
+
+</body>
+</html>

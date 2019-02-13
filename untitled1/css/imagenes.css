@@ -1,0 +1,33 @@
+/*section {
+  width: auto; /*Se debe definir tamaño
+  height: 400px;
+  background: url("../img/pianeishon.png") center center / 200px repeat-y;
+}*/
+/*div {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: url("../img/rectángulo.jpg") top center / 150px no-repeat,
+              url("../img/cccc.jpg") bottom center / 150px repeat-x;*/
+}
+
+section{
+  width: 500px;
+  height: 500px; /*HSL Hue Saturation Lightness, RGBA y HSLA*/
+  background-color: RGB(50 200 100);
+}
+h1{
+  text-shadow: 10px 10px 2px black;
+  box-shadow: 7px 7px 10px 10px orangered;
+}
+
+.hoja{
+  background: url("../img/32fe17ec658138d9b684ad17dd15055a.jpg") center center / 200px repeat-x;
+  position: relative;
+  box-shadow: 20px 20px 30px -20px rgba(0,0,0,0.5);
+}
+
+.flexbox-container {
+  display: flex;
+  align-content: stretch;
+}

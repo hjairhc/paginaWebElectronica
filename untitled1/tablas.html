@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tablas</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+    <table>
+      <thead>
+          <tr>
+            <th rowspan="3">D&iacute;a</th>
+            <th colspan="3">Seminario</th>
+          </tr>
+          <tr>
+            <th colspan="2">Agenda</th>
+            <th rowspan="2">Tema</th>
+          </tr>
+          <tr>
+            <th>Inicio</th>
+            <th>Fin</th>
+          </tr>
+      </thead>
+
+      <tbody>
+          <tr>
+            <td rowspan="2">Lunes</td>
+            <td rowspan="2">08:00 a.m.</td>
+            <td rowspan="2">05:00 p.m.</td>
+            <td>Desarrollo con HTML5</td>
+          </tr>
+          <tr>
+            <td>Dise&ntilde;o con CSS3</td>
+          </tr>
+          <tr>
+            <td rowspan="3">Martes</td>
+            <td>08:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td>Introducci&oacute;n a JavaScript</td>
+          </tr>
+          <tr>
+            <td>11:00 a.m.</td>
+            <td>02:00 p.m.</td>
+            <td>Funciones con JavaScript</td>
+          </tr>
+          <tr>
+            <td>02:00 p.m.</td>
+            <td>05:00 p.m.</td>
+            <td>jQuery</td>
+          </tr>
+          <tr>
+            <td>Mi&eacute;rcoles</td>
+            <td>08:00 a.m.</td>
+            <td>12:00 p.m.</td>
+            <td>PHP</td>
+          </tr>
+
+      </tbody>
+    </table>
+    <form>
+      <fieldset>
+        <legend>Personaliza:</legend>
+        <label for="name">Name:</label>
+        <input name="name" id="name" type="text"><br>
+        <label for="email">Email:</label>
+        <input name="email" id="email" type="text"><br>
+        <label for="birth">Birth:</label>
+        <input name="birth" id="birth" type="text"><br>
+      </fieldset>
+    </form>
+</body>
+</html>
