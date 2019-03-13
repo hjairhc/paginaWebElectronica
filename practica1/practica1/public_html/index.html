@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ibero Electr&oacute;nica</title>
+    <link rel="stylesheet" href="normalize.css">      <!--Hoja de estilos Normalize-->
+    <link rel="stylesheet" href="loginCSS.css">   <!--Hoja de estilos propia de esta página-->
+</head>
+  <body>
+  <header class="cf">
+    <nav>
+      <h1 class="logo">Electr&oacute;nica Ibero</h1>
+    </nav>
+  </header>
+  <div class="login-wrap"><!--Este es el contenedor de los input e indicaciones-->
+    <div class="login-html">
+      <input id="tab-1" type="radio" name="tab" class="sign-in" checked>
+        <label for="tab-1" class="tab">Sign In</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up">
+        <label for="tab-2" class="tab">Sign Up</label>
+      <div class="login-form"><!--Contenedor específico para iniciar sesión-->
+        <div class="sign-in-htm">
+          <div class="group">
+            <label for="user" class="label">Usuario o N&uacute;mero de cuenta</label>
+            <input id="user1" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass1" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <input id="check" type="checkbox" class="check" checked>
+            <label for="check"><span class="icon"></span> Recuerdame</label>
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign In">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <a href="#">¿Olvidaste tu Password?</a>
+          </div>
+        </div>
+        <div class="sign-up-htm"><!--Contenedor específico para crear un usuario-->
+          <div class="group">
+            <label for="user" class="label">Nombre de Usuario</label>
+            <input id="user" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="user" class="label">N&uacute;mero de cuenta</label>
+            <input id="cuenta" type="text" class="input">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Password</label>
+            <input id="pass" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Confirmar Password</label>
+            <input id="pass3" type="password" class="input" data-type="password">
+          </div>
+          <div class="group">
+            <label for="pass" class="label">Correo electr&oacute;nico</label>
+            <input id="pass2" type="text" class="input">
+          </div>
+          <div class="group">
+            <input type="submit" class="button" value="Sign Up">
+          </div>
+          <div class="hr"></div>
+          <div class="foot-lnk">
+            <label for="tab-1">¿Ya eres usuario?</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">P&aacute;gina realizada por Bruno Valerio y Jair Hern&aacute;ndez</footer>
+</body>
+</html>

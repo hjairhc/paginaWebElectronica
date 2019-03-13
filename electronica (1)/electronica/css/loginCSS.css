@@ -1,0 +1,228 @@
+/*Se crea un contenedor con propiedades flexibles
+ para que los elementos se ajusten a la pantalla*/
+.totalCont{
+  width: 90%; /*Se usa porcentaje*/
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+/*Propiedades del cuerpo en general*/
+body{
+  margin:0;
+  color: #eb080b;
+  background: #000000;
+  font:600 16px/18px 'Open Sans',sans-serif;
+}
+/*Clearfix y box sizing*/
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+/*Este contenedor es el que contiene el encabezado
+rojo con el logotipo*/
+.cf {
+  width: 100%;
+  height: 100px;
+  background: #eb1f1a;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.1);
+  margin: 2% 10%;
+  min-width: 30px;
+  display: flex;
+  justify-content: center;/*Centramos los ítems*/
+  align-items: center;
+  max-width: 100%;
+  min-height:100px;
+}
+/*Propiedades del texto en el encabezado*/
+.logo {
+  font-family: 'Centaur', cursive;
+  font-size: 2.5em;
+  display: flex;
+  color: white;
+}
+/*Propiedades del logotipo*/
+.logoIbero{
+  width: 25%;
+  height: 20%;
+  float: left;
+}
+/*Contenedor de los menus Login y Registro*/
+.login-wrap{
+  margin: auto;
+  max-width:500px;
+  min-height:650px;
+  position:relative;
+  background:url(https://www.iberopuebla.mx/sites/default/files/citas/grado_electronica.jpg) no-repeat center;
+  left: 5%
+}
+/*Contenedor login*/
+.login-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:90px 70px 50px 70px;
+  background: rgba(0, 0, 0, 0.82);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+  display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+  text-transform:uppercase;
+}
+.login-html .tab{
+  font-size:22px;
+  padding-bottom:5px;
+  margin:0 15px 10px 0;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+  color:#fff;
+  border-color:#1161ee;
+}
+
+.login-form{
+  min-height:345px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+}
+.login-form .group{
+  margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+  width:100%;
+  color: #ffffff;
+  display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+  border:none;
+  padding:15px 20px;
+  border-radius:25px;
+  background: rgba(0, 0, 0, 0.95);
+}
+.login-form .group input[data-type="password"]{
+
+  -webkit-text-security:circle;
+}
+.login-form .group .label{
+  color: #fdfdfd;
+  font-size:12px;
+}
+.login-form .group .button{
+  background:#1161ee;
+}
+.login-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+  color: #121efe;
+}
+.login-form .group .check:checked + label .icon{
+  background: #121efe;
+}
+.login-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+  transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+  transform:rotate(0);
+}
+
+.hr{
+  height:2px;
+  margin:60px 0 50px 0;
+  background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+  text-align:center;
+}
+
+.footer {
+  background-color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+  text-align: center;
+  left: 4%;
+}
+
+/*Media query para una pantalla de tablet promedio*/
+@media screen and (max-width: 799px){
+  .logo{
+    display: inline-flex; /*Ponemos el texto flexible para acomodarlo con el logo*/
+  }
+  .logoIbero{
+    width: 15%;
+    height: 10%;
+    float: none;
+  }
+}
+
+/*Media query para resolución de pantallas de celular promedio*/
+@media screen and (max-width: 479px){
+  .logo{
+    display:none; /*Oculto el texto del label para que no se junte con el logo*/
+  }
+  .logoIbero{
+    width: 50%;
+    height: 45%;
+    float: none;
+  }
+}
+
+

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc882b6a-4b96-45b6-9cee-67c99fbcde63" name="Default Changelist" comment="" />
+    <list default="true" id="fc882b6a-4b96-45b6-9cee-67c99fbcde63" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/electronica (1).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../electronica (1)/electronica/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offCanvas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offCanvas/css/mostly-fluid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../offCanvas/css/mostly_fluid.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/parallax.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../electronica/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../electronica/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,7 +28,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/parallax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/parallax.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -25,10 +60,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>normalize</find>
+      <find>paralla</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\197640\WebstormProjects\untitled1</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,13 +94,18 @@
         <option value="$PROJECT_DIR$/gridResponsive.html" />
         <option value="$PROJECT_DIR$/css/gridRve.css" />
         <option value="$PROJECT_DIR$/src/css/main.css" />
+        <option value="$PROJECT_DIR$/parallax.html" />
+        <option value="$PROJECT_DIR$/css/parallax.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="837" />
+    <option name="y" value="24" />
+    <option name="width" value="1057" />
+    <option name="height" value="1052" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -78,13 +122,12 @@
             <path>
               <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="untitled1" type="b2602c69:ProjectViewProjectNode" />
               <item name="untitled1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -96,7 +139,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../electronica" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../practica1" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -191,14 +234,17 @@
       <workItem from="1549567071698" duration="5285000" />
       <workItem from="1549912460591" duration="5753000" />
       <workItem from="1550085476082" duration="2663000" />
+      <workItem from="1550090266393" duration="471000" />
+      <workItem from="1550517214943" duration="634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39545000" />
+    <option name="totallyTimeSpent" value="40650000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23182297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -414,6 +460,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
           <caret line="283" column="28" selection-start-line="283" selection-start-column="28" selection-end-line="283" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/parallax.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="51" column="35" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parallax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>

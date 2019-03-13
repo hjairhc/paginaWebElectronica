@@ -1,0 +1,190 @@
+*{
+  box-sizing: border-box;
+}
+
+.wrapper {
+  border-right: 1px solid #000000;
+  overflow: auto;
+  position: relative;
+  width: inherit;
+  height: 700px;
+  align-content: center;
+}
+
+.aside-controller-handler {
+  cursor: pointer; /*Especificar el tipo de puntero*/
+}
+
+.aside-controller {
+  display: none;
+}
+
+.aside {  /*div de los botones*/
+  background-color: #76bfb7;
+  border-right: 1px solid #000;
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  left: -200px;
+  transition: left 0.25s;
+  color: #000000;
+  padding: 20px;
+}
+
+.content { /*contenedor en general*/
+  background-color: #75a9dd;
+  width: 100%;
+  transition: margin-left 0.25s; /*Es para recorrer el div*/
+  color: #000000;
+  height: 100%;
+  padding: 20px;
+}
+
+.aside-controller:checked ~ .aside {
+  left: 0; /*El div aside no se mueve del lado izquierdo*/
+}
+
+.aside-controller:checked ~ .content {
+  margin-left: 200px; /*El div se recorre 200 px*/
+}
+
+.aside h4 {
+  margin: 0.25em 0 1em;
+}
+/*___________________________________________________*/
+/* GENERAL BUTTON STYLING */
+
+.container {
+  padding: 0.5em;
+}
+
+button {
+  background: none;
+  border: 3px solid #000000;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 1em 3em;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #010601;
+}
+
+/* BUTTON 1 */
+.btn-1::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+}
+.btn-1:hover:after {
+  height: 100%;
+}
+.btn-1:hover
+{
+  background: white;
+  transition: background-color 1s steps(30);
+}
+
+/* BUTTON 2 */
+.btn-2::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.btn-2:hover:after {
+  width: 100%;
+}
+.btn-2:hover
+{
+  background: white;
+  transition: background-color 1s linear;
+}
+
+/* BUTTON 3 */
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-3:hover
+{
+  background: white;
+  transition: background-color 1s revert;
+}
+
+/* BUTTON 4 */
+.btn-4::after {
+  background: #2ecc71;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-4:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+.btn-4:hover
+{
+  background: white;
+  transition: background-color 1s unset;
+}
+
+/* BUTTON 5 */
+.btn-5 {
+  overflow: hidden;
+}
+
+.btn-5::after {
+  height: 100%;
+  left: -35%;
+  top: 0;
+  width: 0;
+}
+
+.btn-5:hover:after {
+  height: 100%;
+  width: 135%;
+}
+.btn-5:hover
+{
+  background: white;
+  transition: background-color 1s unset;
+}
+
+/*Transition en diferentes navegadores*/
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
